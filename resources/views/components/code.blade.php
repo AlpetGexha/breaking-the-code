@@ -12,7 +12,7 @@
                         {{ $letters[strtolower($character)] ?? $character }}
                     </span>
 
-                    <div class="bg-gray-200 w-12 h-12 border-2 border-blue-500" ></div>
+                    <div class="bg-gray-200 w-12 h-12 print:border-2 print:border-blue-500" ></div>
                 </div>
             @endforeach
         </div>
