@@ -41,6 +41,14 @@ class CreateCode extends Component
         'interests',
         'rule',
         'bomb',
+        'dataset',
+        'assistant_direction',
+        'eject',
+        'heart_minus',
+        'tabs',
+        'groups',
+        'sunny',
+        'quiz'
     ];
 
     #[Computed(persist: true)]
@@ -55,9 +63,10 @@ class CreateCode extends Component
             ->toArray();
     }
 
-    public function generateChars()
+    public function generateChars(): array
     {
         return collect(range('a', 'z'))
+            ->push('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
             // ->push('ë', 'ç',)
             ->toArray();
     }
